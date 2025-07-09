@@ -1,0 +1,39 @@
+/* Custom Font and Global Reset */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  transition: background 0.3s ease;
+}
+
+/* Smooth transitions on hover */
+button, a {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Success message animation */
+#successMsg {
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom input focus styles */
+input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+/* Admin suggestion item hover effect */
+li:hover {
+  background-color: #f9fafb;
+}
+
+/* Utility class for error messages */
+.error-text {
+  color: #dc2626;
+  font-size: 0.875rem;
+}
